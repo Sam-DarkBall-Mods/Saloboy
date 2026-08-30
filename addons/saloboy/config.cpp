@@ -7,7 +7,7 @@ class CfgPatches
 		{
 			"saloboy_pistol"
 		};
-		requiredVersion=0.1;
+		requiredVersion = 2.22;
 		requiredAddons[]=
 		{
 			"A3_Weapons_F"
