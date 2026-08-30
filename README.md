@@ -2,26 +2,25 @@
 
 [![CI](https://github.com/Sam-DarkBall-Mods/Saloboy/actions/workflows/ci.yml/badge.svg)](https://github.com/Sam-DarkBall-Mods/Saloboy/actions/workflows/ci.yml)
 
-Saloboy weapon systems for Arma 3.
+Saloboy adds the T50 pistol, its single round magazine, ammunition, model and
+sounds. The mod does not add vehicles or scripted systems.
 
 ## Requirements
 
 - Arma 3 2.22 or newer
-- Additional runtime dependencies declared by `CfgPatches`
 
-## Development
+## Building
 
 ```bash
+python3 -B -m unittest discover -s tests -p "test_*.py" -v
 hemtt check
 hemtt build --no-bin
-python3 -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-Legacy `CfgPatches`, function names, virtual PBO prefixes, and release PBO
-filenames are compatibility contracts and must not change in a patch release.
+The weapon classes and the `saloboy` PBO prefix stay unchanged so saved
+loadouts continue to resolve them.
 
 ## License
 
-SQF, Arma configuration, and tooling are GPL-2.0-or-later. Original Arma
-models, textures, materials, animations, and audio are APL-SA. See
-[LICENSES.md](LICENSES.md) and closer notices.
+Code and configs use GPL-2.0-or-later. The weapon model, textures, materials and
+audio use APL-SA. See [LICENSES.md](LICENSES.md).
