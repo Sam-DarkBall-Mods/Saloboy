@@ -11,6 +11,8 @@ include = [
     "LICENSES.md",
     "README.md",
     "THIRD_PARTY_NOTICES.md",
+    "logo128.paa",
+    "logo64.paa",
     "meta.cpp",
     "mod.cpp",
 ]
